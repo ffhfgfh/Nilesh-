@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Custom Styles
+   ========================================================================== */
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b1120;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6366f1;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offset for sticky navbar */
+}
+
+/* Glassmorphism Utilities */
+.glass-nav {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-nav.scrolled {
+    background: rgba(11, 17, 32, 0.9);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Gradients and Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+}
+
+.btn-primary:hover {
+    background-position: right center;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#0f172a, #0f172a), linear-gradient(135deg, #6366f1, #ec4899);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.btn-outline:hover {
+    background-image: linear-gradient(#1e293b, #1e293b), linear-gradient(135deg, #6366f1, #ec4899);
+}
+
+/* Text Shadow */
+.shadow-text {
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
+/* Form Styles */
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover, 
+.form-input:-webkit-autofill:focus, 
+.form-input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #0f172a inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Typed.js Cursor */
+.typed-cursor {
+    color: #ec4899;
+}
